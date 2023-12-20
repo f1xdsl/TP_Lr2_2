@@ -22,7 +22,7 @@ int main() {
             string word;
             p = strtok(newstr, " \n");
             while (p) {
-                if (strlen(p) == 2 && isdigit(p[0]) && isdigit(p[1])) {
+                if (strlen(p) == 2 && p[0] >='0' && p[0] <='9' && p[1] >= '0' && p[1] <= '9') {
                     cout << line << endl;
                     break;
                 }
